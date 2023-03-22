@@ -12,44 +12,82 @@
 </head>
 
 <body>
-    <main>
-        <section class=" bg-green-600">
-            <div class="bg-black">
-                <h1 class="text-5l">Modern Art Gallery</h1>
+    <main class=" font-sans">
+        <section class="grid lg:grid-cols-3 items-center ">
+            <div class="bg-black h-full">
+                <h1 class="text-7xl text-white uppercase">Modern Art Gallery</h1>
             </div>
-            <div class=" bg-black">
-                <img src="../starter-code/assets/desktop/image-hero.jpg" alt="">
 
+            <div class=" text-black">
+                <img class="hidden lg:block" src="../starter-code/assets/desktop/image-hero.jpg" alt="">
+                <img class="lg:hidden" src="../starter-code/assets/mobile/image-hero.jpg" alt="">
             </div>
-            <div class="bg-green-700">
-                <p class="  text-green-500">The arts in the collection of the Modern Art Gallery all started
+
+            <div class="">
+                <p class="text-gray-500 text-2xl">The arts in the collection of the Modern Art Gallery all started
                     from a spark of inspiration. Will these pieces inspire you? Visit
                     us and find out.</p>
 
-                <button>Our location</button>
+                <button class="bg-black uppercase text-white text-lg p-2">Our location
+                    <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke="#FFF" fill="none" d="m1 0 8 12-8 12" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="grid lg:grid-cols-2 items-center lg:my-10 lg:pt-20 lg:px-40 justify-between">
+            <div class=" lg:pr-32">
+                <h1 class="text-6xl uppercase font-bold tracking-tight">Your day at the gallery</h1>
+                <p class="text-2xl p-5 text-gray-500">Wander through our distinct collections and find new insights
+                    about
+                    our artists. Dive into the details of their creative process.</p>
+            </div>
+
+            <div class="lg:-ml-28">
+                <img class="w-full" src="../starter-code/assets/desktop/image-grid-1.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="grid lg:grid-cols-2 lg:px-40 ">
+            <div class="lg:-mr-12">
+                <img src="../starter-code/assets/desktop/image-grid-2.jpg" alt="">
+            </div>
+
+            <div class="lg:ml-16 lg:pl-8">
+                <img class="w-full" src="../starter-code/assets/desktop/image-grid-3.jpg" alt="">
+
+                <div class="bg-black text-white p-9  mt-9 py-14">
+                    <h1 class="text-5xl text-white  font-bold uppercase pb-8"> Come &amp; be inspired</h1>
+
+                    <p class="text-2xl text-gray-400">We’re excited to welcome you to our gallery and see how our
+                        collections
+                        influence you.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="bg-black text-white lg:px-40 py-8 lg:py-20 flex lg:flex-row flex-col space-y-8  justify-between items-center lg:mt-40">
+            <h1 class="text-4xl text-white font-bold uppercase"> Modern <br>Art Gallery</h1>
+
+            <p class="text-xl text-gray-500 ">The Modern Art Gallery is free to all visitors and open<br> seven days a
+                week
+                from 8am to 9pm. Find us at 99 <br> King Street, Newport, USA.</p>
+
+            <div class="socials flex space-x-6">
+                <img src="../starter-code/assets/icon-facebook.svg" alt="">
+                <img src="../starter-code/assets/icon-instagram.svg" alt="">
+                <img src="../starter-code/assets/icon-twitter.svg" alt="">
+
 
             </div>
 
-        </section>
 
-
-        Your day at the gallery
-
-        Wander through our distinct collections and find new insights about
-        our artists. Dive into the details of their creative process.
-
-        Come &amp; be inspired
-
-        We’re excited to welcome you to our gallery and see how our collections
-        influence you.
-
-        Modern Art Gallery
-
-        The Modern Art Gallery is free to all visitors and open seven days a week
-        from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+        </footer>
     </main>
 
-
+    <script src="../src/main.js"></script>
 </body>
 
 </html>
